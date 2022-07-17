@@ -11,6 +11,7 @@ export default function ProfileSection(props:ProfileSectionProps){
     let profession = props.profession ?? "Full Stack Java Developer"
     let name = props.name ?? "Ulric Todman";
     let portraitSrc = props.portraitSrc ?? defaultImgSrc
+    let email = props.email ?? "email@example.com"
 
 
 
@@ -30,9 +31,9 @@ export default function ProfileSection(props:ProfileSectionProps){
 
             {
                 props.emailPrimary ?
-                    <button className="mail-primary"><a href={`mailto:${props.email}`}><img src={MailIcon} alt="mail icon" /> <p>Mail</p></a></button> : <>
-                        <button className="mail"><a href={`mailto:${props.email}`}><img  src={MailIcon} alt="mail icon" /> <p>Mail</p></a></button>
-                        <button className="linkedin"><a href={props.linkedIn} ><img src={LinkedInIcon} alt="linkedin icon"/><p>LinkedIn</p></a></button>
+                    <button className="mail-primary"><a href={`mailto:${email}`}><img src={MailIcon} alt="mail icon" /> <p>Mail</p></a></button> : <>
+                        <button className="mail"><a href={`mailto:${email}`}><img  src={MailIcon} alt="mail icon" /> <p>Mail</p></a></button>
+                        <button className="linkedin"><a href={email} ><img src={LinkedInIcon} alt="linkedin icon"/><p>LinkedIn</p></a></button>
                     </>
 
             }
