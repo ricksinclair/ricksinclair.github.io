@@ -6,5 +6,6 @@ export default interface ProfileSectionProps{
     profession?:string,
     portraitSrc?:string,
     email?:string,
-    emailPrimary?:boolean
+    emailPrimary?:boolean,
+    linkedIn?:string
 }

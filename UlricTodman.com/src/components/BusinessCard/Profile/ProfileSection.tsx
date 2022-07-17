@@ -30,9 +30,9 @@ export default function ProfileSection(props:ProfileSectionProps){
 
             {
                 props.emailPrimary ?
-                    <button className="mail-primary"><img src={MailIcon} /> <p>Mail</p></button> : <>
-                        <button className="mail"><img src={MailIcon}/> <p>Mail</p></button>
-                        <button className="linkedin"><img src={LinkedInIcon} alt=""/><p>LinkedIn</p></button>
+                    <button className="mail-primary"><a href={`mailto:${props.email}`}><img src={MailIcon} alt="mail icon" /> <p>Mail</p></a></button> : <>
+                        <button className="mail"><a href={`mailto:${props.email}`}><img  src={MailIcon} alt="mail icon" /> <p>Mail</p></a></button>
+                        <button className="linkedin"><a href={props.linkedIn} ><img src={LinkedInIcon} alt="linkedin icon"/><p>LinkedIn</p></a></button>
                     </>
 
             }
