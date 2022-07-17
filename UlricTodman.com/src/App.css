@@ -1,11 +1,31 @@
 .App{
 
     display: flex;
+    flex-direction: column;
     row-gap: 0;
     background: #23252C;
     min-height:100vh;
     margin:0;
     padding:0;
+    align-items: center;
     justify-content: center;
 
+}
+
+.small-text{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top:50px;
+    align-self: center;
+    font-size: 8px;
+    font-family: 'Inter', 'sans-serif';
+    color: white;
+    text-transform: lowercase;
+}
+
+.qr{
+    display: block;
+    margin-right: 55px;
+    margin-left: auto;
 }
