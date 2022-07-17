@@ -1,0 +1,11 @@
+.portrait {
+
+    border-radius: 10px 10px 0 0 !important;
+    background: #23252C;
+    background-size: cover;
+    width: 317px;
+    height: 317px;
+    margin-bottom: 21px;
+    padding-bottom: 0;
+
+}

@@ -1,0 +1,304 @@
+
+button {
+    font-family: 'Inter', sans-serif;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+    margin-top: 0;
+}
+
+.business-card {
+    width: 317px;
+    /*background: #161619;*/
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background: #23252C;
+
+}
+
+.canvas {
+    width: 550px;
+    min-height: 780px;
+    background: #23252C;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+.business-card-body {
+    margin-top: 44px;
+    background: #1A1B21;
+    border-radius: 0 0 10px 10px;
+
+}
+
+.business-card-body > h1 {
+    background-color: #1A1B21;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 0;
+
+}
+
+.buttons {
+
+    background: #1A1B21;
+
+}
+
+
+.business-card-body > h4 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 7px;
+    color: #F3BF99;
+
+
+}
+
+a.url {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    text-decoration: none;
+    /* identical to box height, or 15px */
+    color: #F5F5F5;
+    text-align: center;
+
+}
+
+a.url:hover {
+
+    text-decoration: underline;
+
+
+}
+
+
+
+
+.mail {
+    /* Button */
+    margin-top: 15px;
+
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 13px 9px 11px;
+    gap: 8px;
+
+    width: 115px;
+    height: 34px;
+    margin-left: 35px;
+
+    /* white */
+
+    background: #FFFFFF;
+    /* gray/300 */
+
+    border: 1px solid #D1D5DB;
+    /* shadow/sm */
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    margin-bottom: 33px;
+
+}
+
+.mail:hover {
+    background: #d5d5d5;
+
+}
+
+.mail > p {
+    /* Text */
+
+
+    width: 36px;
+    height: 16px;
+
+    font-family: 'Inter', 'sans-serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+
+    /* gray/700 */
+
+    color: #374151;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.mail-primary {
+    /* Button */
+    margin-top: 15px;
+
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 13px 9px 11px;
+    gap: 8px;
+
+    width: 247px;
+    height: 34px;
+    margin-left: 35px;
+
+    /* white */
+
+    background: #FFFFFF;
+    /* gray/300 */
+
+    border: 1px solid #D1D5DB;
+    /* shadow/sm */
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    margin-bottom: 33px;
+
+}
+
+.mail-primary > p {
+    /* Text */
+
+
+    width: 36px;
+    height: 16px;
+
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+
+    /* gray/700 */
+
+    color: #374151;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.mail-primary:hover {
+
+    background: #d5d5d5;
+
+}
+
+
+.linkedin {
+    /* Button */
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 13px 9px 11px;
+    gap: 8px;
+
+    width: 115px;
+    height: 34px;
+    background: #5093E2;
+    /* shadow/sm */
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 15px 35px 33px 17px;
+}
+
+
+.linkedin:hover {
+    background: #4278b6;
+
+}
+
+
+
+
+.button-container {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.body-text-container {
+    height: auto;
+
+}
+
+.link-container > a {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+
+
+
