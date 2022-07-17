@@ -12,7 +12,7 @@ export default function ProfileSection(props:ProfileSectionProps){
     let name = props.name ?? "Ulric Todman";
     let portraitSrc = props.portraitSrc ?? defaultImgSrc
     let email = props.email ?? "email@example.com"
-    let linkedIn = props.defaultValues ? "https://linkedin.com/" : props.linkedIn
+    let linkedIn = props.defaultValues ? "https://linkedin.com/in/ulric-todman" : props.linkedIn
 
 
     return(
