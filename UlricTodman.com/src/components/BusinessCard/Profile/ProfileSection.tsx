@@ -12,7 +12,7 @@ export default function ProfileSection(props:ProfileSectionProps){
     let name = props.name ?? "Ulric Todman";
     let portraitSrc = props.portraitSrc ?? defaultImgSrc
     let email = props.email ?? "email@example.com"
-
+    let linkedIn = props.defaultValues ? "https://linkedin.com/" : props.linkedIn
 
 
     return(
@@ -33,7 +33,7 @@ export default function ProfileSection(props:ProfileSectionProps){
                 props.emailPrimary ?
                     <><a href={`mailto:${email}`}>< button className="mail-primary"><img src={MailIcon} alt="mail icon" /> <p>Mail</p></button></a> </>: <>
                         <a href={`mailto:${email}`}><button className="mail"><img  src={MailIcon} alt="mail icon" /> <p>Mail</p></button></a>
-                        <a href={email} >  <button className="linkedin"><img src={LinkedInIcon} alt="linkedin icon"/><p>LinkedIn</p></button></a>
+                        <a href={linkedIn} >  <button className="linkedin"><img src={LinkedInIcon} alt="linkedin icon"/><p>LinkedIn</p></button></a>
                     </>
 
             }
