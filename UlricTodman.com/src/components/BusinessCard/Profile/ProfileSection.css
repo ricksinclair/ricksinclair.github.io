@@ -9,6 +9,7 @@
     padding-bottom: 0;
 
 }
+
 .mail {
     /* Button */
     margin-top: 15px;
@@ -42,6 +43,40 @@
     margin-bottom: 33px;
 
 }
+
+.mail:hover {
+    background: #d5d5d5;
+
+}
+
+.mail > p {
+    /* Text */
+
+
+    width: 36px;
+    height: 16px;
+
+    font-family: 'Inter', 'sans-serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+
+    /* gray/700 */
+
+    color: #374151;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
 .mail-primary {
     /* Button */
     margin-top: 15px;
@@ -75,43 +110,10 @@
     margin-bottom: 33px;
 
 }
-.mail:hover {
-    background: #d5d5d5;
-
-}
-
-
-.mail > p {
-    /* Text */
-
-
-    width: 36px;
-    height: 16px;
-
-    font-family: 'Inter', 'sans-serif';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    /* identical to box height, or 114% */
-
-
-    /* gray/700 */
-
-    color: #374151;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
-}
 
 .mail-primary > p {
     /* Text */
-
+text-decoration: none;
 
     width: 36px;
     height: 16px;
@@ -143,12 +145,15 @@
 
 }
 
-
+a{
+    text-decoration:none;
+}
 .linkedin {
     /* Button */
 
     /* Auto layout */
     text-decoration: none;
+
     display: flex;
     flex-direction: row;
     justify-content: center;

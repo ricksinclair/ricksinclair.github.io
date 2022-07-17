@@ -1,8 +1,8 @@
 import ProfileSectionProps from "./ProfileSectionProps";
 import defaultImgSrc from "../../../assets/portrait.jpeg";
-import "./ProfileSection.css"
 import MailIcon from "../../../assets/Mail.png"
 import LinkedInIcon from "../../../assets/Icon/Font Awesome Free/Brands/L/linkedin.png"
+import "./ProfileSection.css"
 
 export default function ProfileSection(props:ProfileSectionProps){
 
@@ -31,9 +31,9 @@ export default function ProfileSection(props:ProfileSectionProps){
 
             {
                 props.emailPrimary ?
-                    <button className="mail-primary"><a href={`mailto:${email}`}><img src={MailIcon} alt="mail icon" /> <p>Mail</p></a></button> : <>
-                        <button className="mail"><a href={`mailto:${email}`}><img  src={MailIcon} alt="mail icon" /> <p>Mail</p></a></button>
-                        <button className="linkedin"><a href={email} ><img src={LinkedInIcon} alt="linkedin icon"/><p>LinkedIn</p></a></button>
+                    <><a href={`mailto:${email}`}>< button className="mail-primary"><img src={MailIcon} alt="mail icon" /> <p>Mail</p></button></a> </>: <>
+                        <a href={`mailto:${email}`}><button className="mail"><img  src={MailIcon} alt="mail icon" /> <p>Mail</p></button></a>
+                        <a href={email} >  <button className="linkedin"><img src={LinkedInIcon} alt="linkedin icon"/><p>LinkedIn</p></button></a>
                     </>
 
             }
