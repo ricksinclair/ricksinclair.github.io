@@ -1,3 +1,3 @@
-export default interface InterestsProps{
-    interests?:string;
+export default interface InterestsProps {
+    interests?: string;
 }

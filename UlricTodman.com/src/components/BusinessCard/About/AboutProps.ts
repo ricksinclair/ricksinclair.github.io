@@ -1,5 +1,3 @@
-
-
-export default interface AboutProps{
-    about?:string
+export default interface AboutProps {
+    about?: string
 }

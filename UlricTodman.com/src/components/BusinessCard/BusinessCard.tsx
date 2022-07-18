@@ -27,7 +27,7 @@ export default function BusinessCard(props: BusinessCardProps) {
         url: props.url,
         urlViewName: props.urlViewName,
         portraitSrc: props.portraitSrc,
-        emailPrimary:props.emailPrimary
+        emailPrimary: props.emailPrimary
     }
 
 

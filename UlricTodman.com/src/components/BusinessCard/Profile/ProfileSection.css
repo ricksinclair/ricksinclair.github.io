@@ -133,7 +133,7 @@ a.url:hover {
 
 .mail-primary > p {
     /* Text */
-text-decoration: none;
+    text-decoration: none;
 
     width: 36px;
     height: 16px;
@@ -165,9 +165,10 @@ text-decoration: none;
 
 }
 
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
 }
+
 .linkedin {
     /* Button */
 
@@ -213,8 +214,6 @@ a{
     background: #4278b6;
 
 }
-
-
 
 
 .button-container {
