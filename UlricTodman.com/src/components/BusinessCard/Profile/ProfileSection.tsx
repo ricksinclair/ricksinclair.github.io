@@ -39,7 +39,7 @@ export default function ProfileSection(props: ProfileSectionProps) {
                             <a href={`mailto:${email}?subject=Contact request from your website &body=Email:%0d%0aPhone:%0d%0a Best time to call?: %0d%0a Reason for contact: `}>
                                 <button className="mail"><img src={MailIcon} alt="mail icon"/> <p>Mail</p></button>
                             </a>
-                            <a href={linkedIn}>
+                            <a href={linkedIn} target="_blank">
                                 <button className="linkedin"><img src={LinkedInIcon} alt="linkedin icon"/><p>LinkedIn</p>
                                 </button>
                             </a>
