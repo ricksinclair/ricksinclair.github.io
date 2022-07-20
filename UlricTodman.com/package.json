@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "homepage": "https://ricksinclair.github.io/",
     "predeploy": "npm run build",
-    "deploy": "echo 'ulrictodman.com\nwww.ulrictodman.com' > ./dist/CNAME && gh-pages -d dist"
+    "deploy": "echo 'ulrictodman.com' > ./dist/CNAME && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
