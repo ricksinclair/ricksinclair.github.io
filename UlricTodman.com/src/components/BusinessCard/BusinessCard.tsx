@@ -7,9 +7,9 @@ import Interests from "./Interests/Interests";
 import ProfileSection from "./Profile/ProfileSection";
 import ProfileSectionProps from "./Profile/ProfileSectionProps";
 
+
 export default function BusinessCard(props: BusinessCardProps) {
     let name = props.name ?? "Ulric Todman";
-
 
     let iconsProps: SocialIconsProps = {
         name: name,
@@ -50,9 +50,11 @@ export default function BusinessCard(props: BusinessCardProps) {
                 </div>
 
             </div>
+
         </div>
     )
 
 
 }
+
 

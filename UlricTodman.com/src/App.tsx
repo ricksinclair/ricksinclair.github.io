@@ -1,40 +1,55 @@
 import './App.css'
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 import BusinessCard from "./components/BusinessCard/BusinessCard";
-import QRCode from "./assets/QRCODE.png";
-import camera from "./assets/camera.png"
+import Construction from "./assets/undraw_building_blocks_re_5ahy.svg"
 
 function App() {
 
-    const [share, setShare] = useState(false)
 
     useEffect(() => {
         document.title = "UlricTodman.com"
     }, [])
 
-    const shareToggleHandler = () => {
-        setShare((share) => !share);
-    }
+
     return (
         <div className="App" id="application">
-            <div></div>
-            <BusinessCard defaultValues/>
-            <div className="btn" onClick={shareToggleHandler}><img src={camera} width="15px" alt="camera icon"/><p>SCAN
-                THIS BUSINESS CARD</p></div>
+            <div className={`top-container`}>
+                <div className={`left-container `}>
+                    <BusinessCard defaultValues/>
 
 
-            {share ? <>
-                <img src={QRCode} width="317" className="qr" height="auto" alt="QR Code"/></> : null
-            }
-            <div className="small-text">
+                </div>
 
-                <small>made with react.js and vite</small>
-                <small>&copy; 2022 Ulric Todman</small>
+                <div className="right-container">
+                    <div className={`right-side-mod-1`}>
+                        <h1 className={`right-side-heading`}>Well, Hello there! 👋🏾</h1>
+                        <p className="right-side-copy">
+                            First thing's first. Thanks for stopping by. This place is still under construction but feel
+                            free to connect.
+                        </p>
+                        <div className="under-construction-container">
+                            <img src={Construction} alt="under-construction " className={`under-construction-img`}
+                                 height={`400`} width={`350px`}/>
+
+                        </div>
+                    </div>
+                    <div className={`right-side-mod-2`}></div>
+
+                </div>
             </div>
+
+            <div className="bottom-container">
+                <div className="small-text">
+
+                    <small>made with react.js and vite</small>
+                    <small>&copy; 2022 Ulric Todman</small>
+                </div>
+            </div>
+
 
         </div>
 
     )
-}
 
+}
 export default App

@@ -10,8 +10,12 @@
 
 }
 
-a.url {
-    display: block;
+.profile-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.url {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -21,16 +25,21 @@ a.url {
     /* identical to box height, or 15px */
     color: #F5F5F5;
     text-align: center;
-    margin-bottom: 0;
-
+    padding-bottom: 20px;
 }
 
-a.url:hover {
-
+.url:hover {
     text-decoration: underline;
 
-
 }
+
+
+
+
+
+
+
+
 
 .mail {
     /* Button */
@@ -111,11 +120,8 @@ a.url:hover {
     justify-content: center;
     align-items: center;
     padding: 9px 13px 9px 11px;
-    gap: 8px;
-
     width: 247px;
     height: 34px;
-    margin-left: 35px;
 
     /* white */
 
@@ -129,6 +135,11 @@ a.url:hover {
     border-radius: 6px;
     margin-bottom: 33px;
 
+}
+
+.mail-linkedin {
+    display: flex;
+    justify-content: space-between;
 }
 
 .mail-primary > p {
@@ -168,6 +179,30 @@ a.url:hover {
 a {
     text-decoration: none;
 }
+
+.profile-name {
+    background-color: #1A1B21;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.profile-profession {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 7px;
+    color: #F3BF99;
+}
+
 
 .linkedin {
     /* Button */
@@ -217,8 +252,7 @@ a {
 
 
 .button-container {
-    margin-top: 0;
-    margin-bottom: 0;
+
     display: flex;
     flex-direction: row;
 }
