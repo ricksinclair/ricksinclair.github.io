@@ -127,7 +127,7 @@
         flex-direction: column;
         align-self: center;
         padding-top: 40px;
-        width: 500px;
+        width: 350px;
         flex-grow: 5;
 
     }
@@ -148,12 +148,11 @@
         align-self: center;
     }
 
-    .under-construction-container,
-    .under-construction-img {
+    .under-construction-container {
         display: flex;
-        align-content: center;
-        width: inherit;
-        flex-shrink: 4;
+        justify-content: center;
+        width: 350px;
+        flex-shrink: 10;
 
     }
 

@@ -29,7 +29,7 @@ function App() {
                         </p>
                         <div className="under-construction-container">
                             <img src={Construction} alt="under-construction " className={`under-construction-img`}
-                                 height={`400`} width={`350px`}/>
+                                 height={`300px`} width={`300px`}/>
 
                         </div>
                     </div>
