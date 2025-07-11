@@ -10,6 +10,7 @@ const nextConfig = {
       '/articles/*': ['./src/app/articles/**/*.mdx'],
     },
   },
+  output: 'export', // Enable static export for GitHub Pages
 }
 
 const withMDX = nextMDX({

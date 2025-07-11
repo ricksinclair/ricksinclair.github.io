@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Ulric Todman</title>
+        <link>ulrictodman.com</link>
+        <description>Your blog description</description>
+        <lastBuildDate>Fri, 11 Jul 2025 03:58:24 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Ulric Todman</title>
+            <url>ulrictodman.com/favicon.ico</url>
+            <link>ulrictodman.com</link>
+        </image>
+        <copyright>All rights reserved 2025</copyright>
+        <item>
+            <title><![CDATA[Crafting a design system for a multiplanetary future]]></title>
+            <link>ulrictodman.com/articles/crafting-a-design-system-for-a-multiplanetary-future</link>
+            <guid>ulrictodman.com/articles/crafting-a-design-system-for-a-multiplanetary-future</guid>
+            <pubDate>Mon, 05 Sep 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.]]></description>
+            <author>ulric@ulrictodman.com (Ulric Todman)</author>
+        </item>
+        <item>
+            <title><![CDATA[Introducing Animaginary: High performance web animations]]></title>
+            <link>ulrictodman.com/articles/introducing-animaginary</link>
+            <guid>ulrictodman.com/articles/introducing-animaginary</guid>
+            <pubDate>Fri, 02 Sep 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.]]></description>
+            <author>ulric@ulrictodman.com (Ulric Todman)</author>
+        </item>
+        <item>
+            <title><![CDATA[Rewriting the cosmOS kernel in Rust]]></title>
+            <link>ulrictodman.com/articles/rewriting-the-cosmos-kernel-in-rust</link>
+            <guid>ulrictodman.com/articles/rewriting-the-cosmos-kernel-in-rust</guid>
+            <pubDate>Thu, 14 Jul 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[When we released the first version of cosmOS last year, it was written in Go. Go is a wonderful programming language, but it’s been a while since I’ve seen an article on the front page of Hacker News about rewriting some important tool in Go and I see articles on there about rewriting things in Rust every single week.]]></description>
+            <author>ulric@ulrictodman.com (Ulric Todman)</author>
+        </item>
+    </channel>
+</rss>
