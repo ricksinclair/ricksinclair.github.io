@@ -6,10 +6,7 @@ import { getAllArticles } from '@/lib/articles'
 export const dynamic = 'error' // Ensure this route is not treated as dynamic for static export
 
 export async function GET() {
-  let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
-  if (!siteUrl) {
-    throw Error('Missing NEXT_PUBLIC_SITE_URL environment variable')
-  }
+  let siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://ulrictodman.com'
 
   let author = {
     name: PERSONAL_INFO.name,

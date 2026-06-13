@@ -33,6 +33,8 @@ jobs:
       - name: Build
         run: npm run build
         working-directory: UlricTodman.com
+        env:
+          NEXT_PUBLIC_SITE_URL: https://ulrictodman.com
 
       - uses: actions/configure-pages@v5
 
