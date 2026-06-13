@@ -11,6 +11,7 @@ const nextConfig = {
     },
   },
   output: 'export', // Enable static export for GitHub Pages
+  images: { unoptimized: true }, // GitHub Pages has no image-optimization server
 }
 
 const withMDX = nextMDX({
