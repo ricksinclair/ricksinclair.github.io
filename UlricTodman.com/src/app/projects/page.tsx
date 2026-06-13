@@ -10,7 +10,10 @@ const projects = [
     name: 'Hip Hop Trivia',
     description:
       'A Hip Hop trivia game with a vintage-TV aesthetic. Started as a jQuery bootcamp project in 2018, now being rebuilt in Angular 19 with signal-based state and a roadmap toward daily challenges, multiplayer, and content packs.',
-    link: { href: 'https://github.com/ricksinclair/TriviaGame', label: 'github.com' },
+    links: [
+      { href: 'https://triviagame.ulrictodman.com', label: 'triviagame.ulrictodman.com' },
+      { href: 'https://github.com/ricksinclair/TriviaGame', label: 'github.com' },
+    ],
     logo: logoTriviaGame,
   },
 ]
@@ -55,10 +58,20 @@ export default function Projects() {
               <Card.Link href={project.link.href}>{project.name}</Card.Link>
             </h2>
             <Card.Description>{project.description}</Card.Description>
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-              <LinkIcon className="h-6 w-6 flex-none" />
-              <span className="ml-2">{project.link.label}</span>
-            </p>
+            <div className="relative z-10 mt-6 flex flex-col gap-2">
+              {project.links.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="flex items-center text-sm font-medium text-zinc-400 transition hover:text-teal-500 dark:text-zinc-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkIcon className="h-5 w-5 flex-none" />
+                  <span className="ml-2">{link.label}</span>
+                </a>
+              ))}
+            </div>
           </Card>
         ))}
       </ul>
