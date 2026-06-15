@@ -97,6 +97,9 @@ export default function Uses() {
           <Tool title="Serato DJ Pro">
             The industry standard for a reason. Fast, stable, and deep enough to grow into over years. Paired with the Rane Performer it's an incredibly tight setup for both practice and performance.
           </Tool>
+          <Tool title="Mixed In Key 11 Pro">
+            Harmonic mixing without the guesswork. It analyzes the key and energy of every track so transitions stay in tune, and the cue-point detection gives me a running head start when I'm prepping a set.
+          </Tool>
         </ToolsSection>
         <ToolsSection title="Video Production">
           <Tool title="Final Cut Pro 11">
