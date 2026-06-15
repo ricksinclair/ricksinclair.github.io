@@ -84,13 +84,11 @@ export const NAVIGATION = {
     { name: 'About', href: '/about' },
     { name: 'Articles', href: '/articles' },
     { name: 'Projects', href: '/projects' },
-    { name: 'Speaking', href: '/speaking' },
     { name: 'Uses', href: '/uses' },
   ],
   footer: [
     { name: 'About', href: '/about' },
     { name: 'Projects', href: '/projects' },
-    { name: 'Speaking', href: '/speaking' },
     { name: 'Uses', href: '/uses' },
   ],
 } as const
