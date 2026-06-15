@@ -1,11 +1,31 @@
 import { type Metadata } from 'next'
-import Image from 'next/image'
+import Image, { type StaticImageData } from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoTriviaGame from '@/images/logos/trivia-game.svg'
 
-const projects = [
+type Project = {
+  name: string
+  description: string
+  links: { href: string; label: string }[]
+  logo?: StaticImageData
+  // A single letter rendered in the Engram hero face (Fraunces) instead of an image logo.
+  monogram?: string
+}
+
+const projects: Project[] = [
+  {
+    name: 'Engram',
+    description:
+      'An agent-maintained, bi-temporal knowledge graph for AI memory — Neo4j as the canonical truth, Notion and local files as capture lanes, kept honest by an AI agent that ingests and reasons over it across sessions. Open-source (MIT) and on npm as engram-kg.',
+    links: [
+      { href: 'https://ulrictodman.com/engram', label: 'ulrictodman.com/engram' },
+      { href: 'https://github.com/ricksinclair/engram', label: 'github.com' },
+      { href: 'https://www.npmjs.com/package/engram-kg', label: 'npmjs.com' },
+    ],
+    monogram: 'E',
+  },
   {
     name: 'Hip Hop Trivia',
     description:
@@ -46,14 +66,28 @@ export default function Projects() {
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image
-                src={project.logo}
-                alt=""
-                className="h-8 w-8"
-                unoptimized
-              />
-            </div>
+            {project.monogram ? (
+              <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-zinc-900 shadow-md ring-1 ring-zinc-900/5 dark:ring-white/10">
+                <span
+                  className="bg-clip-text text-2xl leading-none font-medium text-transparent"
+                  style={{
+                    fontFamily: 'var(--font-fraunces)',
+                    backgroundImage: 'linear-gradient(180deg, #fbf4e6, #cbb89c)',
+                  }}
+                >
+                  {project.monogram}
+                </span>
+              </div>
+            ) : (
+              <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                <Image
+                  src={project.logo!}
+                  alt=""
+                  className="h-8 w-8"
+                  unoptimized
+                />
+              </div>
+            )}
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
               <Card.Link href={project.links[0].href}>{project.name}</Card.Link>
             </h2>
