@@ -56,8 +56,8 @@ export default function Uses() {
           <Tool title="Roland FP-30X Digital Piano">
             Full-weighted keys and solid onboard sounds—this is my go-to for piano practice and MIDI input.
           </Tool>
-          <Tool title="MPC Live II + MPK Mini Plus + Studio Monitors">
-            Perfect combo for beat-making and music production. The Live II’s standalone capability pairs nicely with the MPK Mini for portability, and the monitors keep everything sounding clean.
+          <Tool title="MPC Live III + MPK Mini Plus + Studio Monitors">
+            Perfect combo for beat-making and music production. The Live III’s standalone capability pairs nicely with the MPK Mini for portability, and the monitors keep everything sounding clean.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Development tools">
@@ -83,7 +83,7 @@ export default function Uses() {
             My main DAW for everything from quick ideas to full productions. Runs like butter on the M4 Max and plays nice with all my hardware.
           </Tool>
           <Tool title="MPC 3.5">
-            The inception setup: MPC software running as a VST inside Logic while my Live II acts as the controller, sometimes with the Roland or MPK Mini thrown in for good measure. It's beautifully chaotic—MPC controlling MPC while Logic records it all.
+            The inception setup: MPC software running as a VST inside Logic while my Live III acts as the controller, sometimes with the Roland or MPK Mini thrown in for good measure. It's beautifully chaotic—MPC controlling MPC while Logic records it all.
           </Tool>
           <Tool title="Splice">
             My go-to for fresh samples and sounds. The subscription keeps me stocked with everything from obscure vinyl chops to modern trap kits when inspiration strikes at 2 AM.
