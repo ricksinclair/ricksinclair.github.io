@@ -91,6 +91,12 @@ export default function Uses() {
           <Tool title="Tracklib">
             Legal sample clearance made simple. Digging through their vault of original recordings feels like crate digging, but with the paperwork already sorted out.
           </Tool>
+          <Tool title="Rane Performer">
+            My DJ mixer of choice. Built for Serato, it feels like an extension of the software — tight integration, solid build, and the kind of low-latency response that matters when you're mixing live.
+          </Tool>
+          <Tool title="Serato DJ Pro">
+            The industry standard for a reason. Fast, stable, and deep enough to grow into over years. Paired with the Rane Performer it's an incredibly tight setup for both practice and performance.
+          </Tool>
         </ToolsSection>
         <ToolsSection title="Video Production">
           <Tool title="Final Cut Pro 11">

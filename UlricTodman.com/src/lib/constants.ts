@@ -12,7 +12,7 @@ export const PERSONAL_INFO = {
   location: 'North Carolina',
   
   // Professional Info
-  title: 'Software designer, founder, and amateur astronaut',
+  title: 'Software designer, founder, and amateur music producer',
   company: 'Me Myself and I, Inc.,GmbH & Co. KG & LLC & Corp, Ltd.',
   role: 'founder and CEO',
   

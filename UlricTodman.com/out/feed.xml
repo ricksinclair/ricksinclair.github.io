@@ -4,7 +4,7 @@
         <title>Ulric Todman</title>
         <link>https://ulrictodman.com</link>
         <description>Your blog description</description>
-        <lastBuildDate>Sat, 13 Jun 2026 00:35:56 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 15 Jun 2026 12:13:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,27 +14,19 @@
         </image>
         <copyright>All rights reserved 2026</copyright>
         <item>
-            <title><![CDATA[Crafting a design system for a multiplanetary future]]></title>
-            <link>https://ulrictodman.com/articles/crafting-a-design-system-for-a-multiplanetary-future</link>
-            <guid>https://ulrictodman.com/articles/crafting-a-design-system-for-a-multiplanetary-future</guid>
-            <pubDate>Mon, 05 Sep 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.]]></description>
+            <title><![CDATA[Engram: Building AI Memory That Actually Reasons]]></title>
+            <link>https://ulrictodman.com/articles/engram</link>
+            <guid>https://ulrictodman.com/articles/engram</guid>
+            <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Why I built a bi-temporal knowledge graph on Neo4j to solve the one problem every AI-assisted workflow runs into: the context window resets, but the work doesn't.]]></description>
             <author>ulric@ulrictodman.com (Ulric Todman)</author>
         </item>
         <item>
-            <title><![CDATA[Introducing Animaginary: High performance web animations]]></title>
-            <link>https://ulrictodman.com/articles/introducing-animaginary</link>
-            <guid>https://ulrictodman.com/articles/introducing-animaginary</guid>
-            <pubDate>Fri, 02 Sep 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.]]></description>
-            <author>ulric@ulrictodman.com (Ulric Todman)</author>
-        </item>
-        <item>
-            <title><![CDATA[Rewriting the cosmOS kernel in Rust]]></title>
-            <link>https://ulrictodman.com/articles/rewriting-the-cosmos-kernel-in-rust</link>
-            <guid>https://ulrictodman.com/articles/rewriting-the-cosmos-kernel-in-rust</guid>
-            <pubDate>Thu, 14 Jul 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[When we released the first version of cosmOS last year, it was written in Go. Go is a wonderful programming language, but it’s been a while since I’ve seen an article on the front page of Hacker News about rewriting some important tool in Go and I see articles on there about rewriting things in Rust every single week.]]></description>
+            <title><![CDATA[Hip Hop Trivia: From Bootcamp jQuery Project to a Game Worth Finishing]]></title>
+            <link>https://ulrictodman.com/articles/hip-hop-trivia</link>
+            <guid>https://ulrictodman.com/articles/hip-hop-trivia</guid>
+            <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[What started as a weekend assignment in 2018 became one of the projects I keep coming back to. Here's why a hip-hop trivia game with a vintage-TV aesthetic still has a future.]]></description>
             <author>ulric@ulrictodman.com (Ulric Todman)</author>
         </item>
     </channel>

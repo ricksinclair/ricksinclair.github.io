@@ -1,0 +1,44 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Ulric Todman',
+  date: '2026-06-05',
+  title: 'Hip Hop Trivia: From Bootcamp jQuery Project to a Game Worth Finishing',
+  description:
+    'What started as a weekend assignment in 2018 became one of the projects I keep coming back to. Here\'s why a hip-hop trivia game with a vintage-TV aesthetic still has a future.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article}>{props.children}</ArticleLayout>
+
+The assignment was simple: build something interactive with jQuery and an API. Most people in the bootcamp built weather apps. I built a hip-hop trivia game — because if I was going to spend a weekend debugging event listeners, I wanted the subject matter to keep me engaged.
+
+## The original
+
+The first version was rough by any measure. jQuery for everything, no build step, questions hardcoded in a JavaScript array. But it had something that surprised me: a vintage-TV aesthetic that felt genuinely right. A little animated TV set reacted to your answers. Get one correct and the screen lit up. Miss one and the static rolled in.
+
+The questions covered the full breadth of hip-hop history — Rakim, Big Pun, Wu-Tang Clan, Outkast, Missy Elliott. The kind of trivia where you either know it deep or you learn something new. I cared about the subject, so I kept going past the point where most bootcamp projects get abandoned. There's a lesson in that I've applied to every project since.
+
+You can still play the original at [triviagame.ulrictodman.com](https://triviagame.ulrictodman.com). It's best on desktop, in Chrome or Firefox. Fair warning: the questions are not easy, and the language is rated R.
+
+## What a rebuild looks like
+
+The game sat mostly untouched for a few years — which is its own kind of completion. But lately I've been thinking about what it could become, and I've started sketching a rebuild in Angular 19.
+
+The technology goals are clear: remove jQuery, use signal-based state for clean reactivity, add proper routing so each quiz session has a shareable URL. But the more interesting design questions are about the experience: daily challenges that rotate the question set, a multiplayer mode where you and a friend can go head-to-head in real time, content packs organized by era or region or artist.
+
+The aesthetic will stay. The vintage-TV look is the soul of the project — it's the part people remember.
+
+## Why keep going back to it
+
+I've shipped projects with bigger teams and bigger budgets than this one. But the trivia game is the project I mention when someone asks what I actually built for fun.
+
+Part of it is the subject matter — hip-hop is a forty-year archive of craft, history, and competition, and there's something satisfying about building a game that takes it seriously. Part of it is the constraint: it's a small enough project that I can hold the whole thing in my head, which makes experimentation cheap.
+
+But mostly it's this: I can tell when I built something people enjoy, and this one people enjoy. That's worth finishing.
+
+The code is on [GitHub](https://github.com/ricksinclair/TriviaGame) if you want to look at it, remix it, or contribute questions.
