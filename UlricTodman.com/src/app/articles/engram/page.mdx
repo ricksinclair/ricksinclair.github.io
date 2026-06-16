@@ -2,10 +2,10 @@ import { ArticleLayout } from '@/components/ArticleLayout'
 
 export const article = {
   author: 'Ulric Todman',
-  date: '2026-06-10',
-  title: 'Engram: Building AI Memory That Actually Reasons',
+  date: '2026-06-16',
+  title: 'On retiring a name',
   description:
-    'Why I built a bi-temporal knowledge graph on Neo4j to solve the one problem every AI-assisted workflow runs into: the context window resets, but the work doesn\'t.',
+    'I published a project under a name that an earlier, paper-backed project already held. Here is the correction — and credit where it is due.',
 }
 
 export const metadata = {
@@ -15,32 +15,14 @@ export const metadata = {
 
 export default (props) => <ArticleLayout article={article}>{props.children}</ArticleLayout>
 
-Every AI-assisted workflow eventually hits the same wall: you've had a great session, made real decisions, figured out why something works the way it does — and then the context window resets. Next session, you start over. You re-explain the project, re-litigate decisions already made, re-derive context that cost you an hour to develop.
+I've taken down the writeup that used to live here.
 
-I tried long `CLAUDE.md` files. I tried elaborate Notion databases. They helped, but they didn't *reason*. Notion is a great capture surface and a terrible reasoning surface — you can't ask it "what across all my work connects to X?" and get a useful answer.
+It described a personal knowledge-graph tool I'd built and named *Engram*. After I published it, I learned about [**ly-wang19/engram**](https://github.com/ly-wang19/engram) — an open-source **bi-temporal memory engine for LLM agents**, published before mine and backed by a paper ([arXiv:2606.09900](https://arxiv.org/abs/2606.09900)). The overlap was real: the same name, the same *bi-temporal* framing, the same idea of keeping a fact's history instead of overwriting it.
 
-So I built Engram.
+As best I can tell I arrived there independently — but that doesn't really matter. They were first, and they did the rigorous, benchmarked work to earn the idea. So I'm not going to stand on their ground. I've **retired the name**, taken down the piece that used it, and I'm choosing a new one.
 
-## What it is
+If you came here looking for a reproducible, paper-backed memory *engine*, go read **[their project](https://github.com/ly-wang19/engram)** — it's the real thing in that lane.
 
-Engram is a bi-temporal knowledge graph that lives in Neo4j, with Notion and local files as capture lanes. An AI agent ingests new material into the graph at the end of each session, maintains edges between concepts, and can answer questions across sessions because the graph persists where the context window doesn't.
+Credit where it's due. The thunder is theirs.
 
-The model is simple: every durable conclusion — a decision made, a rationale recorded, a pattern noticed — becomes a node. Relationships between nodes become edges. Time is a first-class property, so when something changes, you mark the old node `valid_until = now()` and create a new one rather than deleting history. The graph is always a faithful record of what was true *and when*.
-
-## The key insight
-
-**Memory and reasoning are different problems.** A vector store solves the first one (approximately). A graph database solves both — and you can read every query. There's no opaque blob, no mystery about why the system believes something. You can trace any answer back to the exact nodes and edges that produced it.
-
-Most "AI memory" tools I looked at treated the whole problem as retrieval: embed your notes, do a similarity search, stuff the results into a prompt. That works until you need to answer relational questions — "what decisions did I make *because* of X?" or "which projects share this constraint?" — where similarity search breaks down and graph traversal shines.
-
-## How it works in practice
-
-At the end of a meaningful session, the agent writes Insight nodes capturing decisions and their rationale, merges Source nodes for any artifacts produced (Notion pages, repo docs, Claude memory files), and connects everything with typed edges. A `npm run resume` at the start of the next session runs a "where were we" query — freshness of the graph, newest insights, open threads — so the next session picks up exactly where the last one left off.
-
-The whole stack is plain Neo4j + Node.js scripts + git. No proprietary framework to outgrow, no vendor to depend on. You can read every line.
-
-## Open source
-
-Engram is MIT licensed and published on npm as [engram-kg](https://www.npmjs.com/package/engram-kg). The full write-up — including why this beats a Notion-only or Neo4j-only workflow — lives at [ulrictodman.com/engram](https://ulrictodman.com/engram). The friendly getting-started walkthrough at [ulrictodman.com/engram/getting-started.html](https://ulrictodman.com/engram/getting-started.html) covers two tracks: one for people comfortable in a terminal, one for people who just use Notion and Claude.
-
-If you've ever finished a great AI session and wished the next one could start from where you left off, Engram is for you.
+*— Ulric*
