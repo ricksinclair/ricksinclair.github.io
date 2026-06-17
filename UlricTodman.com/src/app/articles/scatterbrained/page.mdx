@@ -1,0 +1,83 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Ulric Todman',
+  date: '2026-06-17',
+  title: 'A phoenix called Scatterbrained',
+  description:
+    'I retired a project’s name to honor someone else’s prior work. This is what rose from the ashes — and why losing the name made the thing better.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article}>{props.children}</ArticleLayout>
+
+There is a particular grief in taking down your own work.
+
+A few days ago I retired a project I'd named **Engram** — a personal knowledge graph I'd been
+building for months, the thing I opened every working session. After I published it I found
+[**ly-wang19/engram**](https://github.com/ly-wang19/engram): an earlier, paper-backed
+([arXiv:2606.09900](https://arxiv.org/abs/2606.09900)) bi-temporal memory engine for LLM agents.
+Same name, same *bi-temporal* idea of keeping a fact's history instead of overwriting it. They were
+first, and they did the rigorous, benchmarked work to earn it. So I [retired the name](/articles/engram)
+and gave the thunder back.
+
+I expected that to be the end of it. Instead it was the most useful thing that happened to the project.
+
+## What the name was hiding
+
+"Engram" had quietly dragged my project into someone else's lane. The word wants to be said next to
+*memory engine* and *AI-memory infrastructure* — benchmarks, recall curves, a thing you embed in an
+agent. And every time I described mine that way, it felt a half-size too big, like a borrowed coat.
+
+Losing the name forced the question I'd been avoiding: *what is this thing, actually?*
+
+It isn't a retrieval engine. I never benchmarked recall, because that was never the point. What I'd
+actually built was quieter and more personal — a place where everything I care about (projects,
+decisions, the people who shaped them, the sources that back them) lives as one connected graph that
+an agent tends across sessions, so that six months later "wait, **why** did we choose that?" has an
+answer instead of a shrug.
+
+It's not memory infrastructure. It's a **second brain you can look at**.
+
+## Scatterbrained
+
+The new name was sitting there the whole time. *Scatterbrained* — for the people whose best thinking
+arrives in scattered pieces at inconvenient hours. The promise is right there in the joke: a mind full
+of scattered thoughts, **wired together** so they remember everything.
+
+The shape of it:
+
+- **Capture where it's natural.** Jot in Notion, drop a file, paste a link — those are just on-ramps,
+  and entirely optional. The graph is the canonical truth; the capture lanes are conveniences, not
+  requirements.
+- **Query where it's powerful.** A real graph (Neo4j underneath), not a folder of notes. Follow a
+  decision to the benchmark that drove it; follow a fact to the moment it was superseded.
+- **Let an agent keep it honest.** It ingests, links, and — crucially — *invalidates instead of
+  deletes*, so the history survives the correction. (The one idea I'm keeping from the bi-temporal
+  world, because it's simply the right way to remember.)
+
+And the part I'm proudest of, the part that made the rename feel less like a loss and more like a
+promotion: an **observatory**. The whole graph rendered as a constellation you explore on your own
+machine. Click any node and the panel *composes itself* from what that node is — a goal shows its
+progress, a rule shows its confidence, a source opens its actual file, a decision shows the timeline
+of what replaced it and why. Nothing leaves your laptop.
+
+## Better for the fire
+
+Here's the thing nobody tells you about being forced to rename: a good name is a constraint, and the
+right constraint makes the work truthful. "Engram" let me hide behind a category that wasn't really
+mine. "Scatterbrained" doesn't let me pretend it's infrastructure — it's a second brain you can
+*see*, owned and local and a little bit honest about being built by, and for, a scattered mind.
+
+So: credit still where it's due — [the original Engram](https://github.com/ly-wang19/engram) is the
+real thing in the memory-engine lane; go read their paper. And the project that used to borrow that
+name is now [**Scatterbrained**](https://github.com/ricksinclair/scatterbrained), finally wearing
+something that fits.
+
+A phoenix, it turns out, doesn't rise *despite* the fire. It rises because of it.
+
+*— Ulric*

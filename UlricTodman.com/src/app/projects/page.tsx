@@ -16,15 +16,14 @@ type Project = {
 
 const projects: Project[] = [
   {
-    name: 'Engram',
+    name: 'Scatterbrained',
     description:
-      'An agent-maintained, bi-temporal knowledge graph for AI memory — Neo4j as the canonical truth, Notion and local files as capture lanes, kept honest by an AI agent that ingests and reasons over it across sessions. Open-source (MIT) and on npm as engram-kg.',
+      'A personal, agent-maintained knowledge graph you can see — a second brain that remembers across sessions, with a visual “observatory” for exploring it. Capture where it’s natural, query where it’s powerful, and let an agent keep it honest. (Formerly Engram, renamed after a prior-art collision — that’s a story of its own.)',
     links: [
-      { href: 'https://ulrictodman.com/engram', label: 'ulrictodman.com/engram' },
-      { href: 'https://github.com/ricksinclair/engram', label: 'github.com' },
-      { href: 'https://www.npmjs.com/package/engram-kg', label: 'npmjs.com' },
+      { href: '/articles/scatterbrained', label: 'the story →' },
+      { href: 'https://github.com/ricksinclair/scatterbrained', label: 'github.com' },
     ],
-    monogram: 'E',
+    monogram: 'S',
   },
   {
     name: 'Hip Hop Trivia',
